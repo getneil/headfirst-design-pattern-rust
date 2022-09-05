@@ -9,3 +9,6 @@ $ cargo run
 
 # To Run Specific Pattern
 Just comment out in `src/main.rs` the patterns you dont want to run
+
+# Tips
+0. if you are using VS Code it would be good have the `rust-analyzer` extension
