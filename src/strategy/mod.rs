@@ -23,19 +23,19 @@ impl Default for Duck {
 }
 
 trait ConstantDuckTraits {
-    fn trySound(&self);
-    fn tryFly(&self);
+    fn perform_sound(&self);
+    fn perform_fly(&self);
     fn swim(&self);
 }
 
 impl ConstantDuckTraits for Duck {
-    fn trySound(&self) {
+    fn perform_sound(&self) {
         println!("try make sound! {}", self.name);
     }
     fn swim(&self) {
         println!("swimming! {}", self.description);
     }
-    fn tryFly(&self) {
+    fn perform_fly(&self) {
         println!("try flying! {}", self.name)
     }
 }
@@ -48,6 +48,6 @@ pub fn run() {
         ..Default::default()
     };
     duck1.swim();
-    duck1.trySound();
-    duck1.tryFly();
+    duck1.perform_fly();
+    duck1.perform_sound();
 }
