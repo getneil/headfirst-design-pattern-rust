@@ -1,5 +1,6 @@
 mod strategy;
-
+mod observer;
 fn main() {
-    strategy::run();
+    // strategy::run();
+    observer::run();
 }
