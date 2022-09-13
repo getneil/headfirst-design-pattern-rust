@@ -7,6 +7,7 @@ enum BeverageSize {
     Venti,
 }
 impl fmt::Display for BeverageSize {
+    // adds to_string() functionality to enum as used in `self.size.to_string()` below
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
             BeverageSize::Tall => write!(f, "Tall"),
